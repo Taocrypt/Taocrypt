@@ -1,1 +1,2 @@
-![visitors](https://visitor-badge.glitch.me/badge?page_id=taocrypt&left_color=green&right_color=red)
+![Profile views counter](https://komarev.com/ghpvc/?username=taocrypt&&style=flat-square)  
+   
