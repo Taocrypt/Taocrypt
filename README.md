@@ -1,1 +1,1 @@
-𝐓𝐚𝐨𝐂𝐫𝐲𝐩𝐭のMikutap
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=taocrypt)
