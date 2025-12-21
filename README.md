@@ -10,7 +10,11 @@
 </table>
 
 <p align="center" style="margin-top: 10px;">
-    <a href="https://github.com/Taocrypt/Taocrypt/stargazers"><img src="https://img.shields.io/github/stars/Taocrypt/Taocrypt.svg?logo=github"></a>
-    <a href="https://github.com/Taocrypt/Taocrypt/network/members"><img src="https://img.shields.io/github/forks/Taocrypt/Taocrypt.svg?color=blue&logo=github"></a>
+    <a href="https://github.com/Taocrypt/Taocrypt/stargazers">
+        <img src="https://img.shields.io/github/stars/Taocrypt/Taocrypt?style=flat&logo=github&color=yellow" alt="GitHub Stars"/>
+    </a>
+    <a href="https://github.com/Taocrypt/Taocrypt/network/members">
+        <img src="https://img.shields.io/github/forks/Taocrypt/Taocrypt?style=flat&logo=github&color=blue" alt="GitHub Forks"/>
+    </a>
     <img src="https://visitor-badge.laobi.icu/badge?page_id=Taocrypt.Taocrypt" alt="visitors"/>   
 </p>
