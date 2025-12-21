@@ -1,8 +1,8 @@
 <p align="center">
-    <!-- 总 Star 数 -->
-    <img src="https://img.shields.io/github/stars/Taocrypt?label=Total%20Stars&style=flat&color=yellow&logo=github" alt="Total Stars"/>
-    <!-- 总 Fork 数 -->
-    <img src="https://img.shields.io/github/forks/Taocrypt?label=Total%20Forks&style=flat&color=blue&logo=github" alt="Total Forks"/>
+    <!-- 总 Star 数（gh-polls 接口） -->
+    <img src="https://gh-polls.com/githubstars/Taocrypt?color=yellow" alt="Total Stars"/>
+    <!-- 总 Fork 数（gh-polls 接口） -->
+    <img src="https://gh-polls.com/githubforks/Taocrypt?color=blue" alt="Total Forks"/>
     <!-- 访问量 -->
     <img src="https://visitor-badge.laobi.icu/badge?page_id=Taocrypt.Taocrypt" alt="visitors"/>   
 </p>
