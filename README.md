@@ -1,4 +1,4 @@
-## Github Stats <img src="https://komarev.com/ghpvc/?username=taocrypt&&style=flat-square" align="right" style="margin-left: 10px; vertical-align: middle;" />
+<img src="https://komarev.com/ghpvc/?username=taocrypt&&style=flat-square" />
 
 <table><tr><td valign="top" width="50%">
 
