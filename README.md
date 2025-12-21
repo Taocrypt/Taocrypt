@@ -17,3 +17,10 @@
     </td>
   </tr>
 </table>
+
+### 📈 GitHub Activity Graph:
+
+<!-- 你的贪吃蛇贡献图 -->
+<img src="https://raw.githubusercontent.com/Taocrypt/Taocrypt/output/github-contribution-grid-snake.svg" alt="Taocrypt's github activity graph" style="width: 100%; max-width: 800px; margin: 0 auto; display: block;"/>
+
+<!-- 其他内容可继续添加在下方 -->
