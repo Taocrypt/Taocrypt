@@ -1,9 +1,9 @@
 <p align="center">
-    <!-- 总 Star 数徽章 -->
-    <img src="https://img.shields.io/github/stars/Taocrypt?affiliations=OWNER&style=flat&logo=github&color=yellow" alt="Total GitHub Stars"/>
-    <!-- 总 Fork 数徽章 -->
-    <img src="https://img.shields.io/github/forks/Taocrypt?affiliations=OWNER&style=flat&logo=github&color=blue" alt="Total GitHub Forks"/>
-    <!-- 访问量徽章 -->
+    <!-- 总 Star 数（所有仓库汇总） -->
+    <img src="https://img.shields.io/github/stars/Taocrypt?affiliations=OWNER&style=flat&logo=github&color=yellow&label=Total%20Stars" alt="Total Stars"/>
+    <!-- Taocrypt 仓库的 Fork 数（单仓库） -->
+    <img src="https://img.shields.io/github/forks/Taocrypt/Taocrypt?style=flat&logo=github&color=blue&label=Repo%20Forks" alt="Repo Forks"/>
+    <!-- 访问量 -->
     <img src="https://visitor-badge.laobi.icu/badge?page_id=Taocrypt.Taocrypt" alt="visitors"/>   
 </p>
 
