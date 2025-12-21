@@ -17,8 +17,3 @@
     </td>
   </tr>
 </table>
-
-### 📈 GitHub Activity Graph:
-
-<!-- 第三方免部署贪吃蛇贡献图（你的用户名） -->
-<img src="https://ghchart.rshah.org/Taocrypt" alt="Taocrypt's GitHub contribution chart" style="width: 100%; max-width: 800px; margin: 0 auto; display: block;"/>
