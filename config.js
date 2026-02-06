@@ -24,8 +24,16 @@ window.globalConfig = {
     </svg>`
   },
   {
+    name: "Game",
+    subname: "玩会游戏，放松一下～",
+    href: "/game",
+    iconSvg: `<svg viewBox="0 0 1024 1024" width="24" height="24" fill="#000">
+      <path d="M812 180H212c-33.1 0-60 26.9-60 60v544c0 33.1 26.9 60 60 60h600c33.1 0 60-26.9 60-60V240c0-33.1-26.9-60-60-60zm-40 560H252V280h520v460zM424 388h176v176H424V388zm-88 0h48v176h-48V388zm264 0h48v176h-48V388zM384 696h256v48H384v-48z"/>
+    </svg>`
+  },
+  {
     name: "Blog",
-    subname: "blog.taocrypt.us.kg",
+    subname: "雲在青天水在瓶",
     href: "https://blog.taocrypt.us.kg/",
     iconSvg: `<svg viewBox="0 0 1024 1024" width="24" height="24" fill="#000">
       <path d="M896 128l0 832L224 960c-53.024 0-96-42.976-96-96 0-53.024 42.976-96 96-96l608 0L832 0 192 0C121.6 0 64 57.6 64 128l0 768c0 70.4 57.6 128 128 128l768 0L960 128 896 128zM256 832 832 832 832 896 256 896z"/>
