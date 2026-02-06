@@ -16,7 +16,7 @@ window.globalConfig = {
   },
   links: [
   {
-    name: "Github",
+    name: "GitHub",
     subname: "@Taocrypt",
     href: "https://github.com/taocrypt",
     iconSvg: `<svg viewBox="0 0 1024 1024" width="24" height="24" fill="#000">
