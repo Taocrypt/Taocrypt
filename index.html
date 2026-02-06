@@ -1,83 +1,90 @@
 <!DOCTYPE html>
-<html lang="zh">
-
+<html lang="zh-cn">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-  <meta name="description" content="初音未来版本的通过点击/触摸播放声音并出现变化图案的互动内容。">
-  <title>𝐓𝐚𝐨𝐂𝐫𝐲𝐩𝐭のMikutap</title>
-  <link rel="apple-touch-icon" href="icon.png">
-  <link href="https://fonts.loli.net/css?family=Quicksand:400" rel="stylesheet">
-  <link charset="UTF-8" href="shared/sp/css/common.css" rel="stylesheet">
-  <link charset="utf-8" href="css/mikutap.css" rel="stylesheet">
-  <script charset="utf-8" src="https://cdnjs.loli.net/ajax/libs/jquery/2.2.4/jquery.min.js" type="text/javascript"></script>
-  <script charset="utf-8" src="https://cdnjs.loli.net/ajax/libs/pixi.js/3.0.11/pixi.min.js" type="text/javascript"></script>
-  <script charset="utf-8" src="https://cdnjs.loli.net/ajax/libs/gsap/1.19.1/TweenMax.min.js" type="text/javascript"></script>
-  <script charset="UTF-8" src="shared/js/common-2.min.js" type="text/javascript"></script>
-  <script charset="utf-8" src="js/mikutap.min.js" type="text/javascript"></script>
-  <style>
-    .origin-site-info {
-      font-size: 0.7em; /* 缩小后的字体大小 */
-      opacity: 0.6;
-    }
-
-    /* 放大指定文字并加粗 */
-    #scene_top h1 {
-      font-size: 1.8em; /* 1.2 * 1.5 = 1.8 */
-      font-weight: bold; /* 设置为粗体 */
-    }
-
-    #bt_start a,
-    #bt_about a {
-      font-size: 1.2em;
-    }
-
-    .attention {
-      font-size: 1.2em;
-    }
-  </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style/index.css" rel="stylesheet">
+    <link href="style/svelte.css" rel="stylesheet">
+    <title>Taocrypt</title>
+    <meta property="og:title" content="Taocrypt">
+    <meta property="og:description" content="以道󠅄御密󠅑，󠅟显隐守正󠅓，阴阳相󠅢济，动󠅩静󠅠用󠅤奇">
+    <meta property="og:image" content="/img/icon_white.png">
+    <meta property="og:url" content="https://taocrypt.us.kg/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:site" content="twitter账号">
+    <meta name="twitter:creator" content="twitter账号">
+    <meta name="twitter:title" content="Taocrypt">
+    <meta name="twitter:description" content="以道󠅄御密󠅑，󠅟显隐守正󠅓，阴阳相󠅢济，动󠅩静󠅠用󠅤奇">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="/img/icon_white.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <!-- 卡片防挤压样式 -->
+    <style>
+        /* 容器基础样式：防止溢出挤压 */
+        .link-card-container, .project-card-container {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        /* 响应式适配：小屏幕单列显示 */
+        @media (max-width: 768px) {
+            .link-card-container, .project-card-container {
+                grid-template-columns: 1fr !important;
+            }
+        }
+        /* 卡片基础样式：避免内容溢出 */
+        .link-card-container a, .project-card-container a {
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        /* 图标统一样式：确保大小一致 */
+        .link-card-container svg {
+            vertical-align: middle;
+        }
+    </style>
 </head>
-
 <body>
-  <div id="view"></div>
-  <div id="scene_top">
-    <h1>Mikutap</h1>
-    <div id="ng">
-      <p class="atten">十分抱歉<br>您的浏览器并不支持本页面需要的特性</p>
+    <div id="svelte">
+        <div class="bg-hex-1A1D1A min-h-100vh flex flex-col">
+            <header class="svelte-1ena5bt">
+                <div class="mx-auto max-w-1024px py-60px md:py-80px xl:py-120px px-20px">
+                    <!-- 个人信息区域：动态渲染 -->
+                    <div class="flex flex-col gap-30px items-start"></div>
+                </div>
+            </header>
+            <div class="main bg-hex-EDEFE3 rounded-t-50px flex-1 py-15px pb-50px lg:py-50px svelte-16y6iu1">
+                <div class="mx-auto max-w-1024px px-10px lg:px-20px gap-40px flex flex-col">
+                    <!-- Links卡片区域 -->
+                    <div class="flex flex-col bg-hex-FCF9EF px-30px py-40px lg:p-40px gap-20px rounded-50px">
+                        <div class="flex items-center justify-between">
+                            <span class="uppercase font-bold text-18px text-hex-000">Links</span>
+                        </div>
+                        <div class="link-card-container"></div>
+                    </div>
+                    <!-- Projects卡片区域 -->
+                    <div class="flex flex-col bg-hex-FCF9EF px-30px py-40px lg:p-40px gap-20px rounded-50px">
+                        <div class="flex items-center justify-between">
+                            <span class="uppercase font-bold text-18px text-hex-000">Projects</span>
+                        </div>
+                        <div class="project-card-container"></div>
+                    </div>
+                    <!-- 页面开源信息 -->
+                     <div class="copyright" style="text-align: center; padding: 20px 0; color: #666; font-size: 14px;">
+                         <p>© 2026 页面开源地址：<a target="_blank" rel="noopener noreferrer" href="https://github.com/Taocrypt/Taocrypt" style="color: #8FB98E; text-decoration: none;">Taocrypt</a></p>
+                         <p style="margin-top: 5px;">Powered by <a target="_blank" rel="noopener noreferrer" href="https://www.tianli0.top/" style="color: #8FB98E; text-decoration: none;">Tianli's Template</a></p>
+                     </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="ok">
-      <p id="bt_start"><a href="">!开始!</a></p>
-    </div>
-    <p id="bt_about"><a href="">*关于*</a></p>
-    <div class="ok">
-      <p class="attention">※请打开声音并享受。</p>
-    </div>
-    <div class="ok">
-      <p class="tit origin-site-info">Origin Site: <a href="https://aidn.jp/mikutap">https://aidn.jp/mikutap</a></p>
-    </div>
-  </div>
-  <div id="scene_loading">
-    <hr size="1" color="#fff">
-  </div>
-  <div id="scene_main">
-    <div class="set">
-      <p class="attention">点击 &amp; 拖动或者按任意键!</p>
-      <p id="bt_backtrack"><a href="">背景音乐: 开启</a></p>
-    </div>
-  </div>
-  <div id="about_cover"></div>
-  <div id="about">
-    <div id="about_in">
-      <p class="close"><span id="bt_close">×</span></p>
-      <p class="con"> 声音来源 <a href="https://ec.crypton.co.jp/pages/prod/vocaloid/mikuv4x" target="_blank">Hatsune Miku</a> </p>
-      <p class="con"> 作者 <a href="https://aidn.jp" target="_blank">daniwell</a> (<a href="https://twitter.com/daniwell_aidn" target="_blank">twitter</a>) </p>
-      <p class="link"> 灵感来源 <a href="http://patatap.com/" target="_blank">Patatap</a><br>(令人赞叹的网页!)</p>
-    </div>
-  </div>
-  <div id="bt_back">＜返回</div>
-  <div id="bt_fs">□全屏显示</div>
-</body>
 
+    <!-- 脚本加载顺序：配置 → 渲染 → 主题取色 -->
+    <script src="config.js"></script>
+    <script src="render-cards.js"></script>
+    <script src="index.js"></script>
+</body>
 </html>
