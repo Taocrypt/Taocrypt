@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Taocrypt · 以道御密 | 独立开发者 · Web 安全 · Android 逆向</title>
+  <meta name="description" content="Taocrypt（以道御密）的个人主页：独立开发者与安全研究者，关注 Web 安全与 SRC 漏洞挖掘、Android 逆向、AI 与 vibecoding。这里有我的开源项目和小工具。">
+  <meta name="keywords" content="Taocrypt,以道御密,独立开发者,Web 安全,SRC,漏洞挖掘,Android 逆向,AI,vibecoding,开源项目">
+  <meta name="author" content="Taocrypt">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://www.taocrypt.hidns.co/">
+  <meta name="theme-color" content="#07090f">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Taocrypt">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:url" content="https://www.taocrypt.hidns.co/">
+  <meta property="og:title" content="Taocrypt · 以道御密">
+  <meta property="og:description" content="以道󠅄御密󠅑，󠅟显隐守正󠅓，阴阳相󠅢济，动󠅩静󠅠用󠅤奇">
+  <meta property="og:image" content="https://www.taocrypt.hidns.co/assets/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Taocrypt · 以道御密 · 独立开发 · Web 安全 · Android 逆向 · AI">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Taocrypt · 以道御密">
+  <meta name="twitter:description" content="以道󠅄御密󠅑，󠅟显隐守正󠅓，阴阳相󠅢济，动󠅩静󠅠用󠅤奇">
+  <meta name="twitter:image" content="https://www.taocrypt.hidns.co/assets/img/og.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.taocrypt.hidns.co/#website",
+        "url": "https://www.taocrypt.hidns.co/",
+        "name": "Taocrypt",
+        "alternateName": "以道御密",
+        "inLanguage": "zh-CN",
+        "publisher": { "@id": "https://www.taocrypt.hidns.co/#me" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.taocrypt.hidns.co/#me",
+        "name": "Taocrypt",
+        "alternateName": "以道御密",
+        "url": "https://www.taocrypt.hidns.co/",
+        "image": "https://www.taocrypt.hidns.co/assets/img/avatar.png",
+        "email": "mailto:me@taocrypt.com",
+        "jobTitle": "独立开发者 · 安全研究者",
+        "knowsAbout": ["Web 安全", "SRC 漏洞挖掘", "Android 逆向", "AI", "UI 设计", "Material Design 3", "WinUI 3"],
+        "sameAs": ["https://github.com/Taocrypt"]
+      }
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://beacon.0666555.xyz" crossorigin>
+  <script defer src="https://umami.taocrypt.us.kg/script.js" data-website-id="c55c635d-ea1a-4681-8cb0-edc2754925d6"></script>
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" href="/assets/img/favicon.svg?v=2" type="image/svg+xml">
+  <link rel="icon" href="/assets/img/favicon.ico?v=2" sizes="48x48">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png?v=2">
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <filter id="liquid" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.008 0.012" numOctaves="2" seed="7" result="n"/>
+      <feGaussianBlur in="n" stdDeviation="2" result="nb"/>
+      <feDisplacementMap in="SourceGraphic" in2="nb" scale="38" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </svg>
+  <canvas id="fx" aria-hidden="true"></canvas>
+  <div class="bg" aria-hidden="true">
+    <div class="bg-glow"></div>
+  </div>
+
+  <main class="wrap">
+    <header class="hero" id="hero">
+      <noscript>
+        <h1 class="name">Taocrypt</h1>
+        <p class="motto">以道御密 · 独立开发者 · Web 安全 · Android 逆向 · AI</p>
+        <p><a href="https://github.com/Taocrypt">GitHub @Taocrypt</a> · <a href="mailto:me@taocrypt.com">me@taocrypt.com</a></p>
+      </noscript>
+    </header>
+
+    <section class="section" aria-labelledby="t-links">
+      <h2 class="title" id="t-links"><span class="title-zh">道</span><span class="title-en" data-decrypt>Links</span></h2>
+      <div class="links" id="links"></div>
+    </section>
+
+    <section class="section" aria-labelledby="t-projects">
+      <h2 class="title" id="t-projects"><span class="title-zh">器</span><span class="title-en" data-decrypt>Featured Projects</span></h2>
+      <div class="projects" id="projects"></div>
+    </section>
+
+    <section class="section" aria-labelledby="t-tools">
+      <h2 class="title" id="t-tools"><span class="title-zh">术</span><span class="title-en" data-decrypt>More Tools</span></h2>
+      <div class="tools" id="tools"></div>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 Taocrypt · Made with AI &amp; ❤️</p>
+      <p><a href="https://github.com/Taocrypt/Taocrypt" target="_blank" rel="noopener noreferrer">页面开源 · Taocrypt/Taocrypt</a></p>
+    </footer>
+  </main>
+
+  <script src="/assets/js/config.js"></script>
+  <script src="/assets/js/render-cards.js"></script>
+  <script src="/assets/js/fluid.js"></script>
+  <script src="/assets/js/fx.js"></script>
+  <script src="/assets/js/stat.js" defer></script>
+</body>
+</html>

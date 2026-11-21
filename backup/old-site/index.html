@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta name="robots" content="noindex">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style/index.css" rel="stylesheet">
+    <link href="style/svelte.css" rel="stylesheet">
+    <title>Taocrypt</title>
+    <meta property="og:title" content="Taocrypt">
+    <meta property="og:description" content="以道󠅄御密󠅑，󠅟显隐守正󠅓，阴阳相󠅢济，动󠅩静󠅠用󠅤奇">
+    <meta property="og:image" content="img/icon_white.png">
+    <meta property="og:url" content="https://taocrypt.us.kg/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:site" content="twitter账号">
+    <meta name="twitter:creator" content="twitter账号">
+    <meta name="twitter:title" content="Taocrypt">
+    <meta name="twitter:description" content="以道󠅄御密󠅑，󠅟显隐守正󠅓，阴阳相󠅢济，动󠅩静󠅠用󠅤奇">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="img/icon_white.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- 卡片防挤压样式 -->
+    <style>
+        /* 容器基础样式：防止溢出挤压 */
+        .link-card-container, .project-card-container {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        /* 响应式适配：小屏幕单列显示 */
+        @media (max-width: 768px) {
+            .link-card-container, .project-card-container {
+                grid-template-columns: 1fr !important;
+            }
+        }
+        /* 卡片基础样式：避免内容溢出 */
+        .link-card-container a, .project-card-container a {
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        /* 图标统一样式：确保大小一致 */
+        .link-card-container svg {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div id="svelte">
+        <div class="bg-hex-1A1D1A min-h-100vh flex flex-col">
+            <header class="svelte-1ena5bt">
+                <div class="mx-auto max-w-1024px py-60px md:py-80px xl:py-120px px-20px">
+                    <!-- 个人信息区域：动态渲染 -->
+                    <div class="flex flex-col gap-30px items-start"></div>
+                </div>
+            </header>
+            <div class="main bg-hex-EDEFE3 rounded-t-50px flex-1 py-15px pb-50px lg:py-50px svelte-16y6iu1">
+                <div class="mx-auto max-w-1024px px-10px lg:px-20px gap-40px flex flex-col">
+                    <!-- Links卡片区域 -->
+                    <div class="flex flex-col bg-hex-FCF9EF px-30px py-40px lg:p-40px gap-20px rounded-50px">
+                        <div class="flex items-center justify-between">
+                            <span class="uppercase font-bold text-18px text-hex-000">Links</span>
+                        </div>
+                        <div class="link-card-container"></div>
+                    </div>
+                    <!-- Projects卡片区域 -->
+                    <div class="flex flex-col bg-hex-FCF9EF px-30px py-40px lg:p-40px gap-20px rounded-50px">
+                        <div class="flex items-center justify-between">
+                            <span class="uppercase font-bold text-18px text-hex-000">Projects</span>
+                        </div>
+                        <div class="project-card-container"></div>
+                    </div>
+                    <!-- 页面开源信息 -->
+                     <div class="copyright" style="text-align: center; padding: 20px 0; color: #666; font-size: 14px;">
+                         <p>© 2026 页面开源地址：<a target="_blank" rel="noopener noreferrer" href="https://github.com/Taocrypt/Taocrypt" style="color: #8FB98E; text-decoration: none;">Taocrypt</a></p>
+                         <p style="margin-top: 5px;">Powered by <a target="_blank" rel="noopener noreferrer" href="https://www.tianli0.top/" style="color: #8FB98E; text-decoration: none;">Tianli's Template</a></p>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 脚本加载顺序：配置 → 渲染 → 主题取色 -->
+    <script src="config.js"></script>
+    <script src="render-cards.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

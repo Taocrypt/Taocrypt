@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1050" height="450" viewBox="0 0 1050 450" role="img" aria-label="Tergate — 手机 SSH 终端 × 本地 MCP Server">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#05070d"/><stop offset=".6" stop-color="#0b1220"/><stop offset="1" stop-color="#111827"/></linearGradient>
+<radialGradient id="glow" cx=".8" cy=".5" r=".5"><stop offset="0" stop-color="#8b9be0" stop-opacity=".30"/><stop offset="1" stop-color="#8b9be0" stop-opacity="0"/></radialGradient>
+<linearGradient id="t" x1="0" x2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#8b9be0"/></linearGradient>
+<pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#1f2937" stroke-width=".6"/></pattern>
+<clipPath id="card"><rect width="1050" height="450" rx="24"/></clipPath>
+<clipPath id="ic"><rect x="742" y="117" width="216" height="216" rx="52"/></clipPath>
+</defs>
+<style>
+.name{font:800 76px -apple-system,"Segoe UI","Helvetica Neue",Arial,sans-serif;letter-spacing:-1.5px}
+.tag{font:600 26px -apple-system,"Segoe UI","PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;fill:#e5e7eb}
+.chip{font:600 16px -apple-system,"Segoe UI","PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;fill:#f3f4f6}
+.tech{font:600 16px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#9ca3af;letter-spacing:.5px}
+.soon{font:700 13px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#f5d78e;letter-spacing:1.5px}
+.i{animation:in .9s ease backwards}@keyframes in{from{opacity:0;transform:translateY(8px)}}
+.ring{transform-origin:850px 225px;animation:spin 30s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+.float{animation:fl 5s ease-in-out infinite}@keyframes fl{50%{transform:translateY(-8px)}}
+</style>
+<g clip-path="url(#card)">
+<rect width="1050" height="450" fill="url(#bg)"/>
+<rect width="1050" height="450" fill="url(#grid)" opacity=".5"/>
+<rect width="1050" height="450" fill="url(#glow)"/>
+<g class="ring" fill="none" stroke="#8b9be0">
+  <circle cx="850" cy="225" r="165" stroke-opacity=".22" stroke-dasharray="2 9"/>
+  <circle cx="850" cy="225" r="142" stroke-opacity=".35" stroke-dasharray="60 14 6 14"/>
+</g>
+<g class="float">
+  <rect x="742" y="125" width="216" height="216" rx="52" fill="#000" fill-opacity=".45"/>
+  <image x="742" y="117" width="216" height="216" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDggMTA4Ij48cmVjdCB3aWR0aD0iMTA4IiBoZWlnaHQ9IjEwOCIgZmlsbD0iI0RDRTFGQiIvPjxwYXRoIGQ9Ik0zNC44LDQ5LjIgQTE5LjIsMTkuMiAwIDAgMSA3My4yLDQ5LjIgTDczLjIsNzEuNiBBNi40LDYuNCAwIDAgMSA2Ni44LDc4IEw0MS4yLDc4IEE2LjQsNi40IDAgMCAxIDM0LjgsNzEuNiBaIiBmaWxsPSIjNjQ3NEIwIi8+PHBhdGggZD0iTTQ0LjQsNTIuNCBMNTEuNiw1OS42IEw0NC40LDY2LjgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0VDRUVGQyIgc3Ryb2tlLXdpZHRoPSI0LjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik01OCw1Ni40IEw2Miw1Ni40IEExLjYsMS42IDAgMCAxIDYzLjYsNTggTDYzLjYsNjUuMiBBMS42LDEuNiAwIDAgMSA2Miw2Ni44IEw1OCw2Ni44IEExLjYsMS42IDAgMCAxIDU2LjQsNjUuMiBMNTYuNCw1OCBBMS42LDEuNiAwIDAgMSA1OCw1Ni40IFoiIGZpbGw9IiM5QUFBRTYiLz48L3N2Zz4K" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDggMTA4Ij48cmVjdCB3aWR0aD0iMTA4IiBoZWlnaHQ9IjEwOCIgZmlsbD0iI0RDRTFGQiIvPjxwYXRoIGQ9Ik0zNC44LDQ5LjIgQTE5LjIsMTkuMiAwIDAgMSA3My4yLDQ5LjIgTDczLjIsNzEuNiBBNi40LDYuNCAwIDAgMSA2Ni44LDc4IEw0MS4yLDc4IEE2LjQsNi40IDAgMCAxIDM0LjgsNzEuNiBaIiBmaWxsPSIjNjQ3NEIwIi8+PHBhdGggZD0iTTQ0LjQsNTIuNCBMNTEuNiw1OS42IEw0NC40LDY2LjgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0VDRUVGQyIgc3Ryb2tlLXdpZHRoPSI0LjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik01OCw1Ni40IEw2Miw1Ni40IEExLjYsMS42IDAgMCAxIDYzLjYsNTggTDYzLjYsNjUuMiBBMS42LDEuNiAwIDAgMSA2Miw2Ni44IEw1OCw2Ni44IEExLjYsMS42IDAgMCAxIDU2LjQsNjUuMiBMNTYuNCw1OCBBMS42LDEuNiAwIDAgMSA1OCw1Ni40IFoiIGZpbGw9IiM5QUFBRTYiLz48L3N2Zz4K" clip-path="url(#ic)" preserveAspectRatio="xMidYMid slice"/>
+  <rect x="742.5" y="117.5" width="215" height="215" rx="52" fill="none" stroke="#fff" stroke-opacity=".18"/>
+</g>
+<text class="name i" x="56" y="170" fill="url(#t)">Tergate</text>
+<text class="tag i" style="animation-delay:.25s" x="60" y="222">手机 SSH 终端 × 本地 MCP Server</text>
+<line x1="60" y1="262" x2="120" y2="262" stroke="#8b9be0" stroke-width="3" stroke-linecap="round"/>
+<g class="i" style="animation-delay:0.5s"><rect x="60" y="300" width="228" height="36" rx="18" fill="#8b9be0" fill-opacity=".1" stroke="#8b9be0" stroke-opacity=".5"/><text x="174" y="323" text-anchor="middle" class="chip">AI Agent 安全操作服务器</text></g><g class="i" style="animation-delay:0.6s"><rect x="299.52" y="300" width="96" height="36" rx="18" fill="#8b9be0" fill-opacity=".1" stroke="#8b9be0" stroke-opacity=".5"/><text x="348" y="323" text-anchor="middle" class="chip">中转面板</text></g><g class="i" style="animation-delay:0.7s"><rect x="407.52" y="300" width="110" height="36" rx="18" fill="#8b9be0" fill-opacity=".1" stroke="#8b9be0" stroke-opacity=".5"/><text x="463" y="323" text-anchor="middle" class="chip">双栏 SFTP</text></g>
+<text class="tech i" style="animation-delay:.9s" x="60" y="394">◆ Rust · Android</text>
+<rect x=".5" y=".5" width="1049" height="449" rx="24" fill="none" stroke="#8b9be0" stroke-opacity=".3"/>
+</g>
+</svg>

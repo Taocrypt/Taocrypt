@@ -1,0 +1,46 @@
+name: Profile README assets
+
+on:
+  schedule:
+    - cron: "0 16 * * *"   # 每天北京时间 00:00
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/profile/**", ".github/workflows/profile.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Stats & languages cards
+        run: node .github/profile/stats.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LOGIN: ${{ github.repository_owner }}
+          OUT: dist
+
+      - name: Contribution snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake.svg?palette=github-dark&color_snake=#e8b04a&color_dots=#161b22,#3b2f17,#7a5a1f,#c08a2e,#f5d78e
+            dist/snake-light.svg?color_snake=#b7791f&color_dots=#ebedf0,#fdf0d5,#f5d78e,#e8b04a,#b7791f
+
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+          keep_history: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
