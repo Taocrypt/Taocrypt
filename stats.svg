@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="210" viewBox="0 0 460 210">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#05070d"/><stop offset="1" stop-color="#111827"/></linearGradient>
+<linearGradient id="gold" x1="0" x2="1"><stop offset="0" stop-color="#f5d78e"/><stop offset="1" stop-color="#e8b04a"/></linearGradient></defs>
+<style>
+.t{font:700 15px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#f5d78e;letter-spacing:1px}
+.l{font:500 13px -apple-system,"Segoe UI",Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#9ca3af}
+.v{font:800 24px -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:url(#gold)}
+.s{font:600 12px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#e5e7eb}
+.i{animation:in .8s ease backwards}@keyframes in{from{opacity:0;transform:translateY(6px)}}
+.bar{transform-box:fill-box;animation:grow 1.2s ease backwards}@keyframes grow{from{transform:scaleX(0)}}
+</style>
+<rect x=".5" y=".5" width="459" height="209" rx="16" fill="url(#bg)" stroke="#e8b04a" stroke-opacity=".25"/>
+<text class="t" x="28" y="38">◆ GITHUB STATS</text>
+<line x1="28" y1="52" x2="432" y2="52" stroke="#e8b04a" stroke-opacity=".18"/>
+<g class="i" style="animation-delay:0s"><text class="v" x="28" y="98">521</text><text class="l" x="28" y="120">Total Stars</text></g>
+<g class="i" style="animation-delay:0.12s"><text class="v" x="168" y="98">49</text><text class="l" x="168" y="120">Forks</text></g>
+<g class="i" style="animation-delay:0.24s"><text class="v" x="308" y="98">51</text><text class="l" x="308" y="120">Public Repos</text></g>
+<g class="i" style="animation-delay:0.36s"><text class="v" x="28" y="168">791</text><text class="l" x="28" y="190">Contributions (1y)</text></g>
+<g class="i" style="animation-delay:0.48s"><text class="v" x="168" y="168">284</text><text class="l" x="168" y="190">Commits (1y)</text></g>
+<g class="i" style="animation-delay:0.6s"><text class="v" x="308" y="168">36</text><text class="l" x="308" y="190">PRs + Issues (1y)</text></g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="210" viewBox="0 0 460 210">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#05070d"/><stop offset="1" stop-color="#111827"/></linearGradient>
+<linearGradient id="gold" x1="0" x2="1"><stop offset="0" stop-color="#f5d78e"/><stop offset="1" stop-color="#e8b04a"/></linearGradient></defs>
+<style>
+.t{font:700 15px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#f5d78e;letter-spacing:1px}
+.l{font:500 13px -apple-system,"Segoe UI",Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#9ca3af}
+.v{font:800 24px -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:url(#gold)}
+.s{font:600 12px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#e5e7eb}
+.i{animation:in .8s ease backwards}@keyframes in{from{opacity:0;transform:translateY(6px)}}
+.bar{transform-box:fill-box;animation:grow 1.2s ease backwards}@keyframes grow{from{transform:scaleX(0)}}
+</style>
+<rect x=".5" y=".5" width="459" height="209" rx="16" fill="url(#bg)" stroke="#e8b04a" stroke-opacity=".25"/>
+<text class="t" x="28" y="38">◆ TOP LANGUAGES</text>
+<line x1="28" y1="52" x2="432" y2="52" stroke="#e8b04a" stroke-opacity=".18"/>
+<clipPath id="cb"><rect x="28" y="70" width="404" height="10" rx="5"/></clipPath><g clip-path="url(#cb)" class="bar"><rect x="28" y="70" width="166.03" height="10" fill="#A97BFF"/><rect x="194.03318465359283" y="70" width="69.88" height="10" fill="#f1e05a"/><rect x="263.90861096575384" y="70" width="68.43" height="10" fill="#00B4AB"/><rect x="332.33857948551827" y="70" width="63.14" height="10" fill="#b07219"/><rect x="395.48142749163156" y="70" width="22.60" height="10" fill="#7387a2"/><rect x="418.0779679881721" y="70" width="13.92" height="10" fill="#e34c26"/></g>
+<g class="i" style="animation-delay:0.3s"><circle cx="33" cy="108" r="5" fill="#A97BFF"/><text class="s" x="46" y="112">Kotlin <tspan fill="#9ca3af">36.2%</tspan></text></g>
+<g class="i" style="animation-delay:0.4s"><circle cx="238" cy="108" r="5" fill="#f1e05a"/><text class="s" x="251" y="112">JavaScript <tspan fill="#9ca3af">15.3%</tspan></text></g>
+<g class="i" style="animation-delay:0.5s"><circle cx="33" cy="138" r="5" fill="#00B4AB"/><text class="s" x="46" y="142">Dart <tspan fill="#9ca3af">14.9%</tspan></text></g>
+<g class="i" style="animation-delay:0.6000000000000001s"><circle cx="238" cy="138" r="5" fill="#b07219"/><text class="s" x="251" y="142">Java <tspan fill="#9ca3af">13.8%</tspan></text></g>
+<g class="i" style="animation-delay:0.7s"><circle cx="33" cy="168" r="5" fill="#7387a2"/><text class="s" x="46" y="172">PowerShell <tspan fill="#9ca3af">4.9%</tspan></text></g>
+<g class="i" style="animation-delay:0.8s"><circle cx="238" cy="168" r="5" fill="#e34c26"/><text class="s" x="251" y="172">HTML <tspan fill="#9ca3af">3.0%</tspan></text></g>
+</svg>
